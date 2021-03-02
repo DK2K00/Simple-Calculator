@@ -1,4 +1,4 @@
-#border
+#border form
 {
     width: 480px;
     height: 650px;
@@ -28,4 +28,13 @@
     text-align: center;
     padding-bottom: 35px;
     
+}
+
+button
+{
+    background-color: #00296b;
+    border-color: #00509d;
+    padding-bottom: 1px;
+    padding-left: 22px;
+    padding-right: 22px;
 }
