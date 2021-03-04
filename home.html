@@ -1,57 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
-    <link rel="stylesheet" href="app.css">
-</head>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="app.css" />
+  </head>
 
-<body>
+  <body>
     <center>
-        <h1>Calculator</h1>
+      <h1>Calculator</h1>
     </center>
 
-
     <div class="container" id="border">
-        <form action="#">
-            <div class="display">
-                <output></output>
-            </div>
+      <div class="result"><output></output></div>
 
-            <div class="row1" id="seven"><button>7</button></div>
-            <div class="row1" id="eight"><button>8</button></div>
-            <div class="row1" id="nine"><button>9</button></div>
-            <div class="row1" id="C"><button>C</button></div>
+      <div class="row1" id="seven"><button value="7">7</button></div>
+      <div class="row1" id="eight"><button value="8">8</button></div>
+      <div class="row1" id="nine"><button value="9">9</button></div>
+      <div class="row1" id="C"><button value="C">C</button></div>
 
-            <div class="row2" id="four"><button>4</button></div>
-            <div class="row2" id="five"><button>5</button></div>
-            <div class="row2" id="six"><button>6</button></div>
-            <div class="row2" id="mul"><button>&times;</button></div>
+      <div class="row2" id="four"><button value="4">4</button></div>
+      <div class="row2" id="five"><button value="5">5</button></div>
+      <div class="row2" id="six"><button value="6">6</button></div>
+      <div class="row2" id="mul"><button value="*">&times;</button></div>
 
-            <div class="row3" id="one"><button>1</button></div>
-            <div class="row3" id="two"><button>2</button></div>
-            <div class="row3" id="three"><button>3</button></div>
-            <div class="row3" id="divide"><button>&divide;</button></div>
+      <div class="row3" id="one"><button value="1">1</button></div>
+      <div class="row3" id="two"><button value="2">2</button></div>
+      <div class="row3" id="three"><button value="3">3</button></div>
+      <div class="row3" id="divide"><button value="/">&divide;</button></div>
 
-            <div class="row4" id="zero"><button>0</button></div>
-            <div class="row4" id="plus"><button>+</button></div>
-            <div class="row4" id="minus"><button>&minus;</button></div>
-            <div class="row4" id="equal"><button>&#61;</button></div>
-
-        </form>
-
+      <div class="row4" id="zero"><button value="0">0</button></div>
+      <div class="row4" id="plus"><button value="+">+</button></div>
+      <div class="row4" id="minus"><button value="-">&minus;</button></div>
+      <div class="row4" id="equal"><button value="=">&#61;</button></div>
     </div>
 
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
 
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
-        crossorigin="anonymous"></script>
-</body>
-
+    <script src="app.js"></script>
+  </body>
 </html>
