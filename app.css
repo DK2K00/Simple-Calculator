@@ -1,11 +1,14 @@
+/*To give a dark mode vibe*/
 body {
   background-color: #1b1d21;
 }
 
 h1 {
   color: #ff9808;
+  font-family: "Roboto", sans-serif;
 }
 
+/*Calculator shell*/
 .container {
   width: 480px;
   height: 600px;
@@ -16,6 +19,7 @@ h1 {
   padding-inline: 0;
 }
 
+/*Display panel*/
 .result {
   width: 95%;
   height: 15%;
@@ -28,6 +32,7 @@ h1 {
   color: whitesmoke;
 }
 
+/*Each row contains 4 buttons*/
 .row1,
 .row2,
 .row3,
@@ -38,6 +43,7 @@ h1 {
   margin: 13% 0;
 }
 
+/*Styling each button*/
 button {
   height: 45px;
   width: 85px;
@@ -48,10 +54,17 @@ button {
   color: whitesmoke;
 }
 
+/*Separate clor for C and = button */
 #C {
   background-color: #d90429;
 }
 
 #equal {
   background-color: #e85d04;
+}
+
+/*Hover button*/
+button:hover {
+  background-color: wheat;
+  color: #03071e;
 }
