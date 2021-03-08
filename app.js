@@ -1,3 +1,4 @@
+//Selecting each button
 let zero = document.querySelector("#zero");
 let one = document.querySelector("#one");
 let two = document.querySelector("#two");
@@ -16,27 +17,63 @@ let divide = document.querySelector("#divide");
 let equal = document.querySelector("#equal");
 let c = document.querySelector("#C");
 
+//To display output in display panel
 let output = document.querySelector("output");
 
-const buttons = [zero,one,two,three,four,five,six,seven,eight,nine,plus,minus,mul,divide];
+//Creating a button array to contain all the buttons except = and C
+const buttons = [
+  zero,
+  one,
+  two,
+  three,
+  four,
+  five,
+  six,
+  seven,
+  eight,
+  nine,
+  plus,
+  minus,
+  mul,
+  divide,
+];
 
-const val = ['0','1','2','3','4','5','6','7','8','9','+','-','*','/'];
+//Value for each button
+const val = [
+  "0",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "+",
+  "-",
+  "*",
+  "/",
+];
 
-for(let i = 0; i < 14; i++){
+//Assigning value for each button
+for (let i = 0; i < 14; i++) {
   buttons[i].value = val[i];
 }
 
- buttons.forEach((but) => {
-   but.addEventListener("click", () => {
-     output.value += but.value;
-   });
- });
+//Adding event listener
+buttons.forEach((but) => {
+  but.addEventListener("click", () => {
+    output.value += but.value;
+  });
+});
 
-
+//Functionality for clearing display panel
 c.addEventListener("click", () => {
   output.value = "";
 });
 
+//Calculation functionality for equal button
 equal.addEventListener("click", () => {
   let x = output.value;
   let y = eval(x);
